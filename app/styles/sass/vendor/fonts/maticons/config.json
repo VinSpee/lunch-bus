@@ -1,0 +1,853 @@
+{
+  "name": "maticons",
+  "glyphs": [
+    {
+      "uid": "7222571caa5c15f83dcfd447c58d68d9",
+      "orig_css": "search",
+      "orig_code": 128269,
+      "css": "search",
+      "code": 128269,
+      "src": "entypo"
+    },
+    {
+      "uid": "e335adbc2d898c7d85d40c507796e7b4",
+      "orig_css": "mail",
+      "orig_code": 9993,
+      "css": "mail",
+      "code": 9993,
+      "src": "entypo"
+    },
+    {
+      "uid": "0eabe5f8d71cc838484ff39436426d2d",
+      "orig_css": "heart",
+      "orig_code": 9829,
+      "css": "heart",
+      "code": 9829,
+      "src": "entypo"
+    },
+    {
+      "uid": "d18071bbf8f0a8cec8d1f556c91c6af0",
+      "orig_css": "heart-empty",
+      "orig_code": 9825,
+      "css": "heart-empty",
+      "code": 9825,
+      "src": "entypo"
+    },
+    {
+      "uid": "25b34dea4784f72c710454f32ff8fa2b",
+      "orig_css": "star",
+      "orig_code": 9733,
+      "css": "star",
+      "code": 9733,
+      "src": "entypo"
+    },
+    {
+      "uid": "0e3f1335f83cca67329b2c4bcb3aaec5",
+      "orig_css": "star-empty",
+      "orig_code": 9734,
+      "css": "star-empty",
+      "code": 9734,
+      "src": "entypo"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "orig_css": "user",
+      "orig_code": 128100,
+      "css": "user",
+      "code": 128100,
+      "src": "entypo"
+    },
+    {
+      "uid": "ecf8edb95c3f45eb433b4cce7ba9f740",
+      "orig_css": "users",
+      "orig_code": 128101,
+      "css": "users",
+      "code": 128101,
+      "src": "entypo"
+    },
+    {
+      "uid": "6274e0601f2feef7eced89146e708de0",
+      "orig_css": "user-add",
+      "orig_code": 59136,
+      "css": "user-add",
+      "code": 59136,
+      "src": "entypo"
+    },
+    {
+      "uid": "6341ebcbe1ed1f6777c1b9527ead368e",
+      "orig_css": "video",
+      "orig_code": 127916,
+      "css": "video",
+      "code": 127916,
+      "src": "entypo"
+    },
+    {
+      "uid": "3def559c3c39b8500882e02892b7daa8",
+      "orig_css": "picture",
+      "orig_code": 127748,
+      "css": "picture",
+      "code": 127748,
+      "src": "entypo"
+    },
+    {
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "orig_css": "camera",
+      "orig_code": 128247,
+      "css": "camera",
+      "code": 128247,
+      "src": "entypo"
+    },
+    {
+      "uid": "5e9f01871d44e56b45ecbfd00f4dbc3a",
+      "orig_css": "th",
+      "orig_code": 9871,
+      "css": "th",
+      "code": 9871,
+      "src": "entypo"
+    },
+    {
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "orig_css": "th-list",
+      "orig_code": 9776,
+      "css": "th-list",
+      "code": 9776,
+      "src": "entypo"
+    },
+    {
+      "uid": "14017aae737730faeda4a6fd8fb3a5f0",
+      "orig_css": "ok",
+      "orig_code": 10003,
+      "css": "ok",
+      "code": 10003,
+      "src": "entypo"
+    },
+    {
+      "uid": "c709da589c923ba3c2ad48d9fc563e93",
+      "orig_css": "cancel",
+      "orig_code": 10005,
+      "css": "cancel",
+      "code": 10005,
+      "src": "entypo"
+    },
+    {
+      "uid": "c759418c008e9562944080fee617fc76",
+      "orig_css": "cancel-circle",
+      "orig_code": 10006,
+      "css": "cancel-circle",
+      "code": 10006,
+      "src": "entypo"
+    },
+    {
+      "uid": "70370693ada58ef0a60fa0984fe8d52a",
+      "orig_css": "plus",
+      "orig_code": 43,
+      "css": "plus",
+      "code": 43,
+      "src": "entypo"
+    },
+    {
+      "uid": "a66cdc7278e6b33b8bd44a141f5e1a8d",
+      "orig_css": "plus-circle",
+      "orig_code": 10133,
+      "css": "plus-circle",
+      "code": 10133,
+      "src": "entypo"
+    },
+    {
+      "uid": "f2a036a85c0a6a46b0c9709a70e1bb70",
+      "orig_css": "music-alt",
+      "orig_code": 127925,
+      "css": "music-alt",
+      "code": 127925,
+      "src": "entypo"
+    },
+    {
+      "uid": "39e2e6682c28e1e3b5f49825a19717c4",
+      "orig_css": "music",
+      "orig_code": 9834,
+      "css": "music",
+      "code": 9834,
+      "src": "entypo"
+    },
+    {
+      "uid": "1256e3054823e304d7e452a589cf8bb8",
+      "orig_css": "minus",
+      "orig_code": 45,
+      "css": "minus",
+      "code": 45,
+      "src": "entypo"
+    },
+    {
+      "uid": "3eb93689881ad0804f87052a53edc2b6",
+      "orig_css": "minus-circle",
+      "orig_code": 10134,
+      "css": "minus-circle",
+      "code": 10134,
+      "src": "entypo"
+    },
+    {
+      "uid": "de9a631a7d18106aea1c89ba51b1990a",
+      "orig_css": "help-circle",
+      "orig_code": 59140,
+      "css": "help-circle",
+      "code": 59140,
+      "src": "entypo"
+    },
+    {
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "orig_css": "info-circle",
+      "orig_code": 59141,
+      "css": "info-circle",
+      "code": 59141,
+      "src": "entypo"
+    },
+    {
+      "uid": "5308d824454af8ec7835786e272361a9",
+      "orig_css": "back-alt",
+      "orig_code": 59143,
+      "css": "back-alt",
+      "code": 59143,
+      "src": "entypo"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "orig_css": "home",
+      "orig_code": 8962,
+      "css": "home",
+      "code": 8962,
+      "src": "entypo"
+    },
+    {
+      "uid": "815503841e980c848f55e0271deacead",
+      "orig_css": "link",
+      "orig_code": 128279,
+      "css": "link",
+      "code": 128279,
+      "src": "entypo"
+    },
+    {
+      "uid": "44b9e75612c5fad5505edd70d071651f",
+      "orig_css": "attach",
+      "orig_code": 128206,
+      "css": "attach",
+      "code": 128206,
+      "src": "entypo"
+    },
+    {
+      "uid": "1a7104205ea96e6f40ac716d0ca72f21",
+      "orig_css": "lock",
+      "orig_code": 128274,
+      "css": "lock",
+      "code": 128274,
+      "src": "entypo"
+    },
+    {
+      "uid": "e81fc3a0d39ace6ee735d7b24eedd56d",
+      "orig_css": "lock-open",
+      "orig_code": 128275,
+      "css": "lock-open",
+      "code": 128275,
+      "src": "entypo"
+    },
+    {
+      "uid": "25fc99a30fecc4021fdcae5fff5ba9ac",
+      "orig_css": "eye",
+      "orig_code": 59146,
+      "css": "eye",
+      "code": 59146,
+      "src": "entypo"
+    },
+    {
+      "uid": "875ab0f6d417223f6ec76ff7f0a4baed",
+      "orig_css": "tag",
+      "orig_code": 59148,
+      "css": "tag",
+      "code": 59148,
+      "src": "entypo"
+    },
+    {
+      "uid": "23912d5623126e14b7b137c3ba557168",
+      "orig_css": "bookmark",
+      "orig_code": 128278,
+      "css": "bookmark",
+      "code": 128278,
+      "src": "entypo"
+    },
+    {
+      "uid": "1d2a6c3d9236b88b0f185c7c4530fa52",
+      "orig_css": "flag",
+      "orig_code": 9873,
+      "css": "flag",
+      "code": 9873,
+      "src": "entypo"
+    },
+    {
+      "uid": "7ad4d2306ebda8452e5e3eff3cd8241c",
+      "orig_css": "thumbs-up",
+      "orig_code": 128077,
+      "css": "thumbs-up",
+      "code": 128077,
+      "src": "entypo"
+    },
+    {
+      "uid": "b08cfe8039de2ce815686aced2caef06",
+      "orig_css": "download",
+      "orig_code": 128229,
+      "css": "download",
+      "code": 128229,
+      "src": "entypo"
+    },
+    {
+      "uid": "44199a54057e6e264fde61a49b034171",
+      "orig_css": "upload",
+      "orig_code": 128228,
+      "css": "upload",
+      "code": 128228,
+      "src": "entypo"
+    },
+    {
+      "uid": "5d595124cecf472869d1cdc020da0ccc",
+      "orig_css": "upload-cloud",
+      "orig_code": 59153,
+      "css": "upload-cloud",
+      "code": 59153,
+      "src": "entypo"
+    },
+    {
+      "uid": "b6fc2f656ef87275889422e19550680a",
+      "orig_css": "reply",
+      "orig_code": 59154,
+      "css": "reply",
+      "code": 59154,
+      "src": "entypo"
+    },
+    {
+      "uid": "1a4b54ba5618e5364fc47a3d26c1cf59",
+      "orig_css": "reply-all",
+      "orig_code": 59155,
+      "css": "reply-all",
+      "code": 59155,
+      "src": "entypo"
+    },
+    {
+      "uid": "ec347024a3640deebeeab53fd0d5ad03",
+      "orig_css": "forward",
+      "orig_code": 10150,
+      "css": "forward",
+      "code": 10150,
+      "src": "entypo"
+    },
+    {
+      "uid": "c3e5dafba1739ef33cc574c7484febf7",
+      "orig_css": "quote-right",
+      "orig_code": 10078,
+      "css": "quote-right",
+      "code": 10078,
+      "src": "entypo"
+    },
+    {
+      "uid": "b6f32db98a3de777f5ae3005191b1831",
+      "orig_css": "code",
+      "orig_code": 59156,
+      "css": "code",
+      "code": 59156,
+      "src": "entypo"
+    },
+    {
+      "uid": "390d6d13398cbf8c8c3c5493f7d34088",
+      "orig_css": "export",
+      "orig_code": 59157,
+      "css": "export",
+      "code": 59157,
+      "src": "entypo"
+    },
+    {
+      "uid": "c77fd2fd065b5fe16d6f2b41e190b266",
+      "orig_css": "pencil",
+      "orig_code": 9998,
+      "css": "pencil",
+      "code": 9998,
+      "src": "entypo"
+    },
+    {
+      "uid": "28f124a10127a47b9d9472699193d75a",
+      "orig_css": "print",
+      "orig_code": 59158,
+      "css": "print",
+      "code": 59158,
+      "src": "entypo"
+    },
+    {
+      "uid": "216891b0093d4dbef19877d5b00d1b16",
+      "orig_css": "retweet",
+      "orig_code": 59159,
+      "css": "retweet",
+      "code": 59159,
+      "src": "entypo"
+    },
+    {
+      "uid": "005a38f6af74b31aeb817fedb09d2175",
+      "orig_css": "keyboard",
+      "orig_code": 9000,
+      "css": "keyboard",
+      "code": 9000,
+      "src": "entypo"
+    },
+    {
+      "uid": "16890362e811b4cb8de36282b071fe30",
+      "orig_css": "comment",
+      "orig_code": 59160,
+      "css": "comment",
+      "code": 59160,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c0b53280f82068f6bab4e2200025d9f",
+      "orig_css": "chat",
+      "orig_code": 59168,
+      "css": "chat",
+      "code": 59168,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c5335c6e56b876139d7a58ab2f4b2fe",
+      "orig_css": "bell",
+      "orig_code": 128276,
+      "css": "bell",
+      "code": 128276,
+      "src": "entypo"
+    },
+    {
+      "uid": "97902f87200ce74d181044df02a0458d",
+      "orig_css": "attention",
+      "orig_code": 9888,
+      "css": "attention",
+      "code": 9888,
+      "src": "entypo"
+    },
+    {
+      "uid": "457c8e2b305e7af74c1be4f07a01ca92",
+      "orig_css": "vcard",
+      "orig_code": 59170,
+      "css": "vcard",
+      "code": 59170,
+      "src": "entypo"
+    },
+    {
+      "uid": "540b6a4262be769515c79700618b4aea",
+      "orig_css": "address",
+      "orig_code": 59171,
+      "css": "address",
+      "code": 59171,
+      "src": "entypo"
+    },
+    {
+      "uid": "413717f5ea649e8d8b93938be277264a",
+      "orig_css": "calendar",
+      "orig_code": 128197,
+      "css": "calendar",
+      "code": 128197,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c71ee1c65e1992ba32d5ffc5ee7f337",
+      "orig_css": "basket",
+      "orig_code": 59197,
+      "css": "basket",
+      "code": 59197,
+      "src": "entypo"
+    },
+    {
+      "uid": "bc64550dd022ce21604f97309b346cea",
+      "orig_css": "cog",
+      "orig_code": 9881,
+      "css": "cog",
+      "code": 9881,
+      "src": "entypo"
+    },
+    {
+      "uid": "5854855e963044f93b15738a5bb27a29",
+      "orig_css": "phone",
+      "orig_code": 128222,
+      "css": "phone",
+      "code": 128222,
+      "src": "entypo"
+    },
+    {
+      "uid": "3e617d8049807e128c80d0344ba09e37",
+      "orig_css": "rss",
+      "orig_code": 59194,
+      "css": "rss",
+      "code": 59194,
+      "src": "entypo"
+    },
+    {
+      "uid": "96ea1be71f597a5bdfc8f791ada4f651",
+      "orig_css": "archive",
+      "orig_code": 59192,
+      "css": "archive",
+      "code": 59192,
+      "src": "entypo"
+    },
+    {
+      "uid": "0ccb084ddeeae372673793ed0b45bb4a",
+      "orig_css": "folder",
+      "orig_code": 128193,
+      "css": "folder",
+      "code": 128193,
+      "src": "entypo"
+    },
+    {
+      "uid": "9bdc80f58999873c5a8079ad2d7f4143",
+      "orig_css": "trash",
+      "orig_code": 59177,
+      "css": "trash",
+      "code": 59177,
+      "src": "entypo"
+    },
+    {
+      "uid": "c117f17c0316ef71fb2a658c4c273002",
+      "orig_css": "compass",
+      "orig_code": 59176,
+      "css": "compass",
+      "code": 59176,
+      "src": "entypo"
+    },
+    {
+      "uid": "f8513213799b244e66b2836aeee88531",
+      "orig_css": "direction",
+      "orig_code": 10146,
+      "css": "direction",
+      "code": 10146,
+      "src": "entypo"
+    },
+    {
+      "uid": "64f5a50cf7ac972a56a9a511acb5d28e",
+      "orig_css": "map",
+      "orig_code": 59175,
+      "css": "map",
+      "code": 59175,
+      "src": "entypo"
+    },
+    {
+      "uid": "a42b598e4298f3319b25a2702a02e7ff",
+      "orig_css": "location",
+      "orig_code": 59172,
+      "css": "location",
+      "code": 59172,
+      "src": "entypo"
+    },
+    {
+      "uid": "8663320a860b00f26e94d3d15c9ba99a",
+      "orig_css": "clock",
+      "orig_code": 128340,
+      "css": "clock",
+      "code": 128340,
+      "src": "entypo"
+    },
+    {
+      "uid": "7f6916533c0842b6cec699fd773693d3",
+      "orig_css": "hourglass",
+      "orig_code": 9203,
+      "css": "hourglass",
+      "code": 9203,
+      "src": "entypo"
+    },
+    {
+      "uid": "29e7f6072d5935d7818204d9b088508b",
+      "orig_css": "block",
+      "orig_code": 128683,
+      "css": "block",
+      "code": 128683,
+      "src": "entypo"
+    },
+    {
+      "uid": "3a3f65b92c9b2fcbb3a8dcd0d42ee806",
+      "orig_css": "resize-full",
+      "orig_code": 59204,
+      "css": "resize-full",
+      "code": 59204,
+      "src": "entypo"
+    },
+    {
+      "uid": "108c8ac13badc00ce66da014436e6eb1",
+      "orig_css": "resize-small",
+      "orig_code": 59206,
+      "css": "resize-small",
+      "code": 59206,
+      "src": "entypo"
+    },
+    {
+      "uid": "9248ce8062fb4707a6919bfe9ac1af8e",
+      "orig_css": "popup",
+      "orig_code": 59212,
+      "css": "popup",
+      "code": 59212,
+      "src": "entypo"
+    },
+    {
+      "uid": "40ef3542646bed70cb63f1290c9d98c9",
+      "orig_css": "down-circle2",
+      "orig_code": 59224,
+      "css": "down-circle2",
+      "code": 59224,
+      "src": "entypo"
+    },
+    {
+      "uid": "0db0310883e0bdacfd1bb2d394238e8a",
+      "orig_css": "left-circle2",
+      "orig_code": 59225,
+      "css": "left-circle2",
+      "code": 59225,
+      "src": "entypo"
+    },
+    {
+      "uid": "52725ff4d4042964bd3a60609bf3695b",
+      "orig_css": "right-circle2",
+      "orig_code": 59226,
+      "css": "right-circle2",
+      "code": 59226,
+      "src": "entypo"
+    },
+    {
+      "uid": "64691230b90991883f94c6dfb2afc90a",
+      "orig_css": "up-circle2",
+      "orig_code": 59227,
+      "css": "up-circle2",
+      "code": 59227,
+      "src": "entypo"
+    },
+    {
+      "uid": "8704cd847a47b64265b8bb110c8b4d62",
+      "orig_css": "down-open",
+      "orig_code": 59228,
+      "css": "down-open",
+      "code": 59228,
+      "src": "entypo"
+    },
+    {
+      "uid": "c311c48d79488965b0fab7f9cd12b6b5",
+      "orig_css": "left-open",
+      "orig_code": 59229,
+      "css": "left-open",
+      "code": 59229,
+      "src": "entypo"
+    },
+    {
+      "uid": "749e7d90a9182938180f1d2d8c33584e",
+      "orig_css": "right-open",
+      "orig_code": 59230,
+      "css": "right-open",
+      "code": 59230,
+      "src": "entypo"
+    },
+    {
+      "uid": "9c7ff134960bb5a82404e4aeaab366d9",
+      "orig_css": "up-open",
+      "orig_code": 59231,
+      "css": "up-open",
+      "code": 59231,
+      "src": "entypo"
+    },
+    {
+      "uid": "d5098cb09be5827a2911dbab5af49ad2",
+      "orig_css": "down-thin",
+      "orig_code": 11015,
+      "css": "down-thin",
+      "code": 11015,
+      "src": "entypo"
+    },
+    {
+      "uid": "6acd5cf005d48f96787350e72bd45688",
+      "orig_css": "left-thin",
+      "orig_code": 11013,
+      "css": "left-thin",
+      "code": 11013,
+      "src": "entypo"
+    },
+    {
+      "uid": "9e67bfab0143d9511f8eef6897caeb88",
+      "orig_css": "right-thin",
+      "orig_code": 10145,
+      "css": "right-thin",
+      "code": 10145,
+      "src": "entypo"
+    },
+    {
+      "uid": "43c4064ec1260d0e55c37e0467c75cbb",
+      "orig_css": "up-thin",
+      "orig_code": 11014,
+      "css": "up-thin",
+      "code": 11014,
+      "src": "entypo"
+    },
+    {
+      "uid": "7e89c12b577c31bc91bfb61bb597f01f",
+      "orig_css": "down-dir",
+      "orig_code": 9662,
+      "css": "down-dir",
+      "code": 9662,
+      "src": "entypo"
+    },
+    {
+      "uid": "9aeaf29161eb005a308bbd624d6e066a",
+      "orig_css": "left-dir",
+      "orig_code": 9666,
+      "css": "left-dir",
+      "code": 9666,
+      "src": "entypo"
+    },
+    {
+      "uid": "ff9a85aa20950dcc0615a2707a2b3f8e",
+      "orig_css": "right-dir",
+      "orig_code": 9656,
+      "css": "right-dir",
+      "code": 9656,
+      "src": "entypo"
+    },
+    {
+      "uid": "401b644723fb2f20b0df30cce7745c18",
+      "orig_css": "up-dir",
+      "orig_code": 9652,
+      "css": "up-dir",
+      "code": 9652,
+      "src": "entypo"
+    },
+    {
+      "uid": "78944e4652d6f9b8b506eaef331308cd",
+      "orig_css": "down-bold",
+      "orig_code": 58544,
+      "css": "down-bold",
+      "code": 58544,
+      "src": "entypo"
+    },
+    {
+      "uid": "0222089fb4194cc714dcc1ffd2525c11",
+      "orig_css": "left-bold",
+      "orig_code": 58541,
+      "css": "left-bold",
+      "code": 58541,
+      "src": "entypo"
+    },
+    {
+      "uid": "1a90b06af8614b12d8c8a5b90cc19ab3",
+      "orig_css": "right-bold",
+      "orig_code": 58542,
+      "css": "right-bold",
+      "code": 58542,
+      "src": "entypo"
+    },
+    {
+      "uid": "8c8f768607b8fc4c92c0f85b488e87e8",
+      "orig_css": "up-bold",
+      "orig_code": 58543,
+      "css": "up-bold",
+      "code": 58543,
+      "src": "entypo"
+    },
+    {
+      "uid": "465bb89b6f204234e5787c326b4ae54c",
+      "orig_css": "ccw",
+      "orig_code": 10226,
+      "css": "ccw",
+      "code": 10226,
+      "src": "entypo"
+    },
+    {
+      "uid": "bb46b15cb78cc4cc05d3d715d522ac4d",
+      "orig_css": "cw",
+      "orig_code": 10227,
+      "css": "cw",
+      "code": 10227,
+      "src": "entypo"
+    },
+    {
+      "uid": "fa0118a65fc8dee739469f6901bbd189",
+      "orig_css": "level-down",
+      "orig_code": 8627,
+      "css": "level-down",
+      "code": 8627,
+      "src": "entypo"
+    },
+    {
+      "uid": "3d349daaea304032a7669b4f24931b6c",
+      "orig_css": "shuffle",
+      "orig_code": 128256,
+      "css": "shuffle",
+      "code": 128256,
+      "src": "entypo"
+    },
+    {
+      "uid": "3eadc3e443cf1c7e17f1b44d21254c00",
+      "orig_css": "target",
+      "orig_code": 127919,
+      "css": "target",
+      "code": 127919,
+      "src": "entypo"
+    },
+    {
+      "uid": "97bd5542ed3e143d2ee9b60e14487615",
+      "orig_css": "list-add",
+      "orig_code": 57347,
+      "css": "list-add",
+      "code": 57347,
+      "src": "entypo"
+    },
+    {
+      "uid": "978aa8facd816df874039e139cb0cdde",
+      "orig_css": "top-list",
+      "orig_code": 127942,
+      "css": "top-list",
+      "code": 127942,
+      "src": "entypo"
+    },
+    {
+      "uid": "114fed43140e2b5ce42c48b95c19375b",
+      "orig_css": "cloud",
+      "orig_code": 9729,
+      "css": "cloud",
+      "code": 9729,
+      "src": "entypo"
+    },
+    {
+      "uid": "6a12c2b74456ea21cc984e11dec227a1",
+      "orig_css": "globe",
+      "orig_code": 119565,
+      "css": "globe",
+      "code": 119565,
+      "src": "entypo"
+    },
+    {
+      "uid": "767fede84586366cd7d6c835be745454",
+      "orig_css": "mobile",
+      "orig_code": 128241,
+      "css": "mobile",
+      "code": 128241,
+      "src": "entypo"
+    },
+    {
+      "uid": "b7a336095aa4535c3689cb557edf23db",
+      "orig_css": "monitor",
+      "orig_code": 128187,
+      "css": "monitor",
+      "code": 128187,
+      "src": "entypo"
+    },
+    {
+      "uid": "89eb512cb82a1c3fe83cb16134f9876c",
+      "orig_css": "back-in-time",
+      "orig_code": 59249,
+      "css": "back-in-time",
+      "code": 59249,
+      "src": "entypo"
+    },
+    {
+      "uid": "c22c5fa36d200793ad39b984fb5c8610",
+      "orig_css": "flag-sw",
+      "orig_code": 62977,
+      "css": "flag-sw",
+      "code": 62977,
+      "src": "entypo"
+    }
+  ]
+}
