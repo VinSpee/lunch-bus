@@ -1,2 +1,3 @@
 define [], ->
-  "Projectologist, at your service."
+	"Projectologist, at your service."
+
