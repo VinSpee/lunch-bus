@@ -1,4 +1,5 @@
 temp
+.tmp
 dist
 *.sass-cache
 components
