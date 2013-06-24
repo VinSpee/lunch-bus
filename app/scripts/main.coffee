@@ -1,7 +1,7 @@
 require.config
 	shim: {}
 	paths:
-		jquery: "vendor/jquery.min"
+		jquery: "../components/jquery/jquery.min"
 
 require ["app"], (app) ->
 
