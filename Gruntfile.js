@@ -14,6 +14,7 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    grunt.loadNpmTasks('grunt-symlink');
 
     // configurable paths
     var yeomanConfig = {
@@ -242,6 +243,17 @@ module.exports = function (grunt) {
             }
         },
         copy: {
+            js: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>/scripts',
+                    dest: '.tmp/scripts',
+                    src: [
+                        '{,*/}*.js',
+                    ]
+                }]
+            },
             dist: {
                 files: [{
                     expand: true,
@@ -255,6 +267,13 @@ module.exports = function (grunt) {
                         'styles/fonts/*'
                     ]
                 }]
+            }
+        },
+        symlink: {
+            js: {
+                dest: '.tmp/components',
+                relativeSrc: '../app/components',
+                options: {type: 'dir'}
             }
         },
         bower: {
@@ -295,6 +314,8 @@ module.exports = function (grunt) {
         'coffee',
         'compass:dist',
         'useminPrepare',
+        'copy:js',
+        'symlink:js',
         'requirejs',
         'imagemin',
         'svgmin',
@@ -302,7 +323,7 @@ module.exports = function (grunt) {
         'concat',
         'cssmin',
         'uglify',
-        'copy',
+        'copy:dist',
         'usemin'
     ]);
 

@@ -17,6 +17,7 @@
     "grunt-contrib-imagemin": "*",
     "grunt-contrib-livereload": "*",
     "grunt-bower-hooks": "*",
+    "grunt-symlink": "*",
     "grunt-svgmin": "*",
     "grunt-usemin": "*",
     "grunt-regarde": "*",
