@@ -28,202 +28,204 @@
 		<script src="themes/lunch-bus/app/components/modernizr/modernizr.js"></script>
 	</head>
 	<body>
-		<header>
-			<h1><a href="/">{Title}</a></h1>
-			{block:Description}
-			<div class="description">
-				{Description}
-			</div>
-			{/block:Description}
-
-			<ul>
-				{block:HasPages}
-				{block:Pages}
-				<li><a href="{URL}">{Label}</a></li>
-				{/block:Pages}
-				{/block:HasPages}
-				<li><a href="/archive">{lang:Archive}</a></li>
-				{block:AskEnabled}
-				<li><a href="/ask">{AskLabel}</a></li>
-				{/block:AskEnabled}
-			</ul>
-
-			<form>
-				<input type="text" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-				<input type="submit" value="{lang:Search}">
-			</form>
-		</header>
-
-		<section class="content">
-			{block:SearchPage}
-			<div class="result">
-				<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
-				{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
-			</div>
-			{/block:SearchPage}
-
-			{block:TagPage}
-			<div class="result">
-				<p>{lang:TagResultCount posts tagged Tag 3}</p>
-			</div>
-			{/block:TagPage}
-
-			{block:Posts}
-			<article class="post {TagsAsClasses}">
-				{block:Date}
-				{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
-				{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
-				{/block:Date}
-
-				{block:Text}
-				<div class="text">
-					{block:Title}
-					<h3>{Title}</h3>
-					{/block:Title}
-					{Body}
+		<main role="main">
+			<header role="banner" class="page__header">
+				<h1><a href="/">{Title}</a></h1>
+				{block:Description}
+				<div class="subhead">
+					{Description}
 				</div>
-				{/block:Text}
+				{/block:Description}
 
-				{block:Quote}
-				<div class="quote">
-					<blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
-					{block:Source}
-					<p class="source">&mdash; {Source}</p>
-					{/block:Source}
+				<ul>
+					{block:HasPages}
+					{block:Pages}
+					<li><a href="{URL}">{Label}</a></li>
+					{/block:Pages}
+					{/block:HasPages}
+					<li><a href="/archive">{lang:Archive}</a></li>
+					{block:AskEnabled}
+					<li><a href="/ask">{AskLabel}</a></li>
+					{/block:AskEnabled}
+				</ul>
+
+				<form>
+					<input type="text" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
+					<input type="submit" value="{lang:Search}">
+				</form>
+			</header>
+
+			<section class="content">
+				{block:SearchPage}
+				<div class="result">
+					<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
+					{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
 				</div>
-				{/block:Quote}
+				{/block:SearchPage}
 
-				{block:Link}
-				<div class="link">
-					<h3><a href="{URL}" {Target}>{Name}</a></h3>
-					{block:Description}
-					<div class="caption">{Description}</div>
-					{/block:Description}
+				{block:TagPage}
+				<div class="result">
+					<p>{lang:TagResultCount posts tagged Tag 3}</p>
 				</div>
-				{/block:Link}
+				{/block:TagPage}
 
-				{block:Video}
-				<div class="video">
-					{Video-500}
-					{block:Caption}
-					<div class="caption">{Caption}</div>
-					{/block:Caption}
-				</div>
-				{/block:Video}
+				{block:Posts}
+				<article class="post {TagsAsClasses}">
+					{block:Date}
+					{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
+					{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
+					{/block:Date}
 
-				{block:Audio}
-				<div class="audio">
-					{block:AlbumArt}
-					<img src="{AlbumArtURL}" alt="">
-					{/block:AlbumArt}
-					{AudioPlayerBlack}
-					{block:Caption}
-					<div class="caption">{Caption}</div>
-					{/block:Caption}
-				</div>
-				{/block:Audio}
+					{block:Text}
+					<div class="text">
+						{block:Title}
+						<h3>{Title}</h3>
+						{/block:Title}
+						{Body}
+					</div>
+					{/block:Text}
 
-				{block:Photo}
-				<div class="photo">
+					{block:Quote}
+					<div class="quote">
+						<blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
+						{block:Source}
+						<p class="source">&mdash; {Source}</p>
+						{/block:Source}
+					</div>
+					{/block:Quote}
+
+					{block:Link}
+					<div class="link">
+						<h3><a href="{URL}" {Target}>{Name}</a></h3>
+						{block:Description}
+						<div class="caption">{Description}</div>
+						{/block:Description}
+					</div>
+					{/block:Link}
+
+					{block:Video}
+					<div class="video">
+						{Video-500}
+						{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</div>
+					{/block:Video}
+
+					{block:Audio}
+					<div class="audio">
+						{block:AlbumArt}
+						<img src="{AlbumArtURL}" alt="">
+						{/block:AlbumArt}
+						{AudioPlayerBlack}
+						{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</div>
+					{/block:Audio}
+
+					{block:Photo}
+					<div class="photo">
+							{LinkOpenTag}
+							<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+							{LinkCloseTag}
+							{block:Caption}
+							<div class="caption">{Caption}</div>
+							{/block:Caption}
+					</div>
+					{/block:Photo}
+
+					{block:Photoset}
+					<div class="photoset">
+						{block:Photos}
+							<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+							{block:Caption}
+							<div class="caption">{Caption}</div>
+							{/block:Caption}
+						{/block:Photos}
+						{block:Caption}
+						<div class="caption">{Caption}</div>
+						{/block:Caption}
+					</div>
+					{/block:Photoset}
+
+					{block:Panorama}
+					<div class="panorama">
 						{LinkOpenTag}
-						<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+						<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
 						{LinkCloseTag}
 						{block:Caption}
 						<div class="caption">{Caption}</div>
 						{/block:Caption}
+					</div>
+					{/block:Panorama}
+
+					{block:Chat}
+					<div class="chat">
+						{block:Title}
+						<h3>{Title}</h3>
+						{/block:Title}
+						<ul class="conversation">
+							{block:Lines}
+							<li class="line {Alt}">
+								{block:Label}
+								<span class="person">{Label}</span>
+								{/block:Label}
+								<span class="person-said">{Line}</span>
+							</li>
+							{/block:Lines}
+						</ul>
+					</div>
+					{/block:Chat}
+
+					{block:Answer}
+					<div class="answer">
+						<img src="{AskerPortraitURL-40}">
+						{Asker}
+						{Question}
+						{Answer}
+					</div>
+					{/block:Answer}
+
+					{block:IndexPage}
+					<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
+					{/block:IndexPage}
+				</article>
+				{/block:Posts}
+
+				{block:PermalinkPagination}
+				<div class="pagination">
+					{block:PreviousPost}
+					<a class="prev"href="{PreviousPost}">{lang:Previous post}</a>
+					{/block:PreviousPost}
+					{block:NextPost}
+					<a class="next" href="{NextPost}">{lang:Next post}</a>
+					{/block:NextPost}
 				</div>
-				{/block:Photo}
+				{/block:PermalinkPagination}
 
-				{block:Photoset}
-				<div class="photoset">
-					{block:Photos}
-						<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
-						{block:Caption}
-						<div class="caption">{Caption}</div>
-						{/block:Caption}
-					{/block:Photos}
-					{block:Caption}
-					<div class="caption">{Caption}</div>
-					{/block:Caption}
+				{block:Pagination}
+				<div class="pagination">
+					{block:PreviousPage}
+					<a class="prev" href="{PreviousPage}">{lang:Previous}</a>
+					{/block:PreviousPage}
+
+					{block:JumpPagination length="5"}
+					{block:CurrentPage}
+					<span class="current-page">{PageNumber}</span>
+					{/block:CurrentPage}
+					{block:JumpPage}
+					<a class="jump-page" href="{URL}">{PageNumber}</a>
+					{/block:JumpPage}
+					{/block:JumpPagination}
+
+					{block:NextPage}
+					<a class="next" href="{NextPage}">{lang:Next}</a>
+					{/block:NextPage}
 				</div>
-				{/block:Photoset}
-
-				{block:Panorama}
-				<div class="panorama">
-					{LinkOpenTag}
-					<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
-					{LinkCloseTag}
-					{block:Caption}
-					<div class="caption">{Caption}</div>
-					{/block:Caption}
-				</div>
-				{/block:Panorama}
-
-				{block:Chat}
-				<div class="chat">
-					{block:Title}
-					<h3>{Title}</h3>
-					{/block:Title}
-					<ul class="conversation">
-						{block:Lines}
-						<li class="line {Alt}">
-							{block:Label}
-							<span class="person">{Label}</span>
-							{/block:Label}
-							<span class="person-said">{Line}</span>
-						</li>
-						{/block:Lines}
-					</ul>
-				</div>
-				{/block:Chat}
-
-				{block:Answer}
-				<div class="answer">
-					<img src="{AskerPortraitURL-40}">
-					{Asker}
-					{Question}
-					{Answer}
-				</div>
-				{/block:Answer}
-
-				{block:IndexPage}
-				<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
-				{/block:IndexPage}
-			</article>
-			{/block:Posts}
-
-			{block:PermalinkPagination}
-			<div class="pagination">
-				{block:PreviousPost}
-				<a class="prev"href="{PreviousPost}">{lang:Previous post}</a>
-				{/block:PreviousPost}
-				{block:NextPost}
-				<a class="next" href="{NextPost}">{lang:Next post}</a>
-				{/block:NextPost}
-			</div>
-			{/block:PermalinkPagination}
-
-			{block:Pagination}
-			<div class="pagination">
-				{block:PreviousPage}
-				<a class="prev" href="{PreviousPage}">{lang:Previous}</a>
-				{/block:PreviousPage}
-
-				{block:JumpPagination length="5"}
-				{block:CurrentPage}
-				<span class="current-page">{PageNumber}</span>
-				{/block:CurrentPage}
-				{block:JumpPage}
-				<a class="jump-page" href="{URL}">{PageNumber}</a>
-				{/block:JumpPage}
-				{/block:JumpPagination}
-
-				{block:NextPage}
-				<a class="next" href="{NextPage}">{lang:Next}</a>
-				{/block:NextPage}
-			</div>
-			{/block:Pagination}
-		</section><!--close content-->
+				{/block:Pagination}
+			</section><!--close content-->
+		</main>
 		<script data-main="scripts/main" src="themes/lunch-bus/app/components/requirejs/require.js"></script>
 	</body>
 	{/block:tumblrThemr}
