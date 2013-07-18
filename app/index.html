@@ -37,7 +37,8 @@
 				</div>
 				{/block:Description}
 
-				<ul>
+				<nav class="page__nav--layout">
+				<ul class="page__nav">
 					{block:HasPages}
 					{block:Pages}
 					<li><a href="{URL}">{Label}</a></li>
@@ -49,182 +50,232 @@
 					{/block:AskEnabled}
 				</ul>
 
-				<form>
-					<input type="text" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-					<input type="submit" value="{lang:Search}">
-				</form>
+				<div class="page__search--layout">
+					<form>
+						<input type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
+						<input type="submit" value="{lang:Search}">
+					</form>
+				</div>
 			</header>
 
-			<section class="content">
-				{block:SearchPage}
-				<div class="result">
-					<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
-					{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
-				</div>
-				{/block:SearchPage}
+			<div class="page__content--layout">
+				<section class="page__content"><!-- start content -->
+					{block:SearchPage}
+					<section class="search__results">
+						<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
+						{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
+					</section>
+					{/block:SearchPage}
 
-				{block:TagPage}
-				<div class="result">
-					<p>{lang:TagResultCount posts tagged Tag 3}</p>
-				</div>
-				{/block:TagPage}
+					{block:TagPage}
+					<section class="tag__result">
+						<p>{lang:TagResultCount posts tagged Tag 3}</p>
+					</section>
+					{/block:TagPage}
 
-				{block:Posts}
-				<article class="post {TagsAsClasses}">
-					{block:Date}
-					{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
-					{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
-					{/block:Date}
+					{block:Posts}
+					<article class="{post__layout TagsAsClasses}">
+						{block:Date}
+						{block:NewDayDate}
+						<time datetime="{Year}-{Month}-{DayOfMonth}">{DayOfWeek}, {Month} {DayOfMonth}, {Year}</time>
+						{/block:NewDayDate}
+						{block:SameDayDate}
+						<time datetime="{Year}-{Month}-{DayOfMonth}">{DayOfWeek}, {Month} {DayOfMonth}, {Year}</time>
+						{/block:SameDayDate}
+						{/block:Date}
 
-					{block:Text}
-					<div class="text">
-						{block:Title}
-						<h3>{Title}</h3>
-						{/block:Title}
-						{Body}
-					</div>
-					{/block:Text}
+						{block:Text}
+						<div class="post--text">
+							{block:Title}
+							<header class="post__header">
+								<h2>{Title}</h2>
+							</header>
+							{/block:Title}
+							<section class="post__content">
+								{Body}
+							</section>
+						</div>
+						{/block:Text}
 
-					{block:Quote}
-					<div class="quote">
-						<blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
-						{block:Source}
-						<p class="source">&mdash; {Source}</p>
-						{/block:Source}
-					</div>
-					{/block:Quote}
+						{block:Quote}
+						<div class="post--quote">
+							<figure class="quote">
+								<blockquote>{Quote}</blockquote>
+								{block:Source}
+								<figcaption><cite class="quote__citation">{Source}</cite></figcaption>
+								{/block:Source}
+							</figure>
+						</div>
+						{/block:Quote}
 
-					{block:Link}
-					<div class="link">
-						<h3><a href="{URL}" {Target}>{Name}</a></h3>
-						{block:Description}
-						<div class="caption">{Description}</div>
-						{/block:Description}
-					</div>
-					{/block:Link}
+						{block:Link}
+						<div class="link">
+							<header class="post__header--link">
+								<h2><a href="{URL}" {Target}>{Name}</a></h2>
+							</header>
+							{block:Description}
+							<section class="post__caption--link">
+								<p>{Description}</p>
+							</section>
+							{/block:Description}
+						</div>
+						{/block:Link}
 
-					{block:Video}
-					<div class="video">
-						{Video-500}
-						{block:Caption}
-						<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-					{/block:Video}
+						{block:Video}
+						<figure class="post--video">
+							{Video-500}
+							{block:Caption}
+							<figcaption>
+								<p class="post__caption--video">{Caption}</p>
+							</figcaption>
+							{/block:Caption}
+						</figure>
+						{/block:Video}
 
-					{block:Audio}
-					<div class="audio">
-						{block:AlbumArt}
-						<img src="{AlbumArtURL}" alt="">
-						{/block:AlbumArt}
-						{AudioPlayerBlack}
-						{block:Caption}
-						<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-					{/block:Audio}
+						{block:Audio}
+						<div class="post--audio">
+							{block:AlbumArt}
+							<img class="album-art" src="{AlbumArtURL}" alt="">
+							{/block:AlbumArt}
+							{AudioPlayerBlack}
+							{block:Caption}
+							<section class="post__caption--audio">
+								<p>{Caption}</p>
+							</section>
+							{/block:Caption}
+						</div>
+						{/block:Audio}
 
-					{block:Photo}
-					<div class="photo">
+						{block:Photo}
+						<figure class="post--photo">
 							{LinkOpenTag}
-							<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+							<img class="photo" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
 							{LinkCloseTag}
 							{block:Caption}
-							<div class="caption">{Caption}</div>
+							<figcaption>
+								<p class="post__caption--photo">{Caption}</p>
+							</figcaption>
 							{/block:Caption}
-					</div>
-					{/block:Photo}
+						</figure>
+						{/block:Photo}
 
-					{block:Photoset}
-					<div class="photoset">
-						{block:Photos}
-							<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+						{block:Photoset}
+						<figure class="post--photoset">
+							<ul class="post__items--photoset">
+								{block:Photos}
+									<li>
+										<figure class="photoset">
+											<img class="photoset__photo" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+											{block:Caption}
+											<figcaption class="post__caption--photo">
+												<div class="caption">{Caption}</div>
+											</figcaption>
+											{/block:Caption}
+										</figure>
+									</li>
+								{/block:Photos}
+							</ul>
 							{block:Caption}
-							<div class="caption">{Caption}</div>
+							<figcaption>
+								<p class="post__caption--photoset">{Caption}</p>
+							</figcaption>
 							{/block:Caption}
-						{/block:Photos}
-						{block:Caption}
-						<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-					{/block:Photoset}
+						</figure>
+						{/block:Photoset}
 
-					{block:Panorama}
-					<div class="panorama">
-						{LinkOpenTag}
-						<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
-						{LinkCloseTag}
-						{block:Caption}
-						<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-					{/block:Panorama}
+						{block:Panorama}
+						<figure class="post--panorama">
+							{LinkOpenTag}
+							<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
+							{LinkCloseTag}
+							{block:Caption}
+							<figcaption>
+								<p class="post__caption--panorama">{Caption}</p>
+							</figcaption>
+							{/block:Caption}
+						</figure>
+						{/block:Panorama}
 
-					{block:Chat}
-					<div class="chat">
-						{block:Title}
-						<h3>{Title}</h3>
-						{/block:Title}
-						<ul class="conversation">
-							{block:Lines}
-							<li class="line {Alt}">
-								{block:Label}
-								<span class="person">{Label}</span>
-								{/block:Label}
-								<span class="person-said">{Line}</span>
-							</li>
-							{/block:Lines}
-						</ul>
-					</div>
-					{/block:Chat}
+						{block:Chat}
+						<section class="post--chat">
+							{block:Title}
+							<h2>{Title}</h2>
+							{/block:Title}
+							<ul class="conversation">
+								{block:Lines}
+								<li class="conversation__line {Alt}">
+									{block:Label}
+									<span class="conversation__person">{Label}</span>
+									{/block:Label}
+									<span class="conversation__person-said">{Line}</span>
+								</li>
+								{/block:Lines}
+							</ul>
+						</section>
+						{/block:Chat}
 
-					{block:Answer}
-					<div class="answer">
-						<img src="{AskerPortraitURL-40}">
-						{Asker}
-						{Question}
-						{Answer}
-					</div>
-					{/block:Answer}
+						{block:Answer}
+						<dl class="answer">
+							<dd class="answer__asker">
+								<img class="asker__avatar" src="{AskerPortraitURL-40}">
+								<span class="asker__name">{Asker}</span>
+							</dd>
+							<dt class="answer__question">{Question}</dt>
+							<dd class="answer__answer">{Answer}</dd>
+						</dl>
+						{/block:Answer}
 
-					{block:IndexPage}
-					<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
-					{/block:IndexPage}
-				</article>
-				{/block:Posts}
+						{block:IndexPage}
+						<a href="{Permalink}" class="permalink">{lang:Permalink}</a>
+						{/block:IndexPage}
+					</article>
+					{/block:Posts}
 
-				{block:PermalinkPagination}
-				<div class="pagination">
-					{block:PreviousPost}
-					<a class="prev"href="{PreviousPost}">{lang:Previous post}</a>
-					{/block:PreviousPost}
-					{block:NextPost}
-					<a class="next" href="{NextPost}">{lang:Next post}</a>
-					{/block:NextPost}
-				</div>
-				{/block:PermalinkPagination}
+					{block:PermalinkPagination}
+					<ul class="pagination">
+						{block:PreviousPost}
+						<li>
+							<a class="pagination__prev"href="{PreviousPost}">{lang:Previous post}</a>
+						</li>
+						{/block:PreviousPost}
+						{block:NextPost}
+						<li>
+							<a class="next" href="{NextPost}">{lang:Next post}</a>
+						</li>
+						{/block:NextPost}
+					</ul>
+					{/block:PermalinkPagination}
 
-				{block:Pagination}
-				<div class="pagination">
-					{block:PreviousPage}
-					<a class="prev" href="{PreviousPage}">{lang:Previous}</a>
-					{/block:PreviousPage}
+					{block:Pagination}
+					<ul class="pagination">
+						{block:PreviousPage}
+						<li>
+							<a class="prev" href="{PreviousPage}">{lang:Previous}</a>
+						</li>
+						{/block:PreviousPage}
 
-					{block:JumpPagination length="5"}
-					{block:CurrentPage}
-					<span class="current-page">{PageNumber}</span>
-					{/block:CurrentPage}
-					{block:JumpPage}
-					<a class="jump-page" href="{URL}">{PageNumber}</a>
-					{/block:JumpPage}
-					{/block:JumpPagination}
+						{block:JumpPagination length="5"}
+						{block:CurrentPage}
+						<li>
+							<span class="current-page">{PageNumber}</span>
+						</li>
+						{/block:CurrentPage}
+						{block:JumpPage}
+						<li>
+							<a class="jump-page" href="{URL}">{PageNumber}</a>
+						</li>
+						{/block:JumpPage}
+						{/block:JumpPagination}
 
-					{block:NextPage}
-					<a class="next" href="{NextPage}">{lang:Next}</a>
-					{/block:NextPage}
-				</div>
-				{/block:Pagination}
-			</section><!--close content-->
+						{block:NextPage}
+						<li>
+							<a class="next" href="{NextPage}">{lang:Next}</a>
+						</li>
+						{/block:NextPage}
+					</ul>
+					{/block:Pagination}
+				</section><!--close content-->
+			</div>
 		</main>
 		<script data-main="scripts/main" src="themes/lunch-bus/app/components/requirejs/require.js"></script>
 	</body>
