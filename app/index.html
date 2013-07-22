@@ -37,8 +37,8 @@
 				</div>
 				{/block:Description}
 
-				<nav class="page__nav--layout">
-				<ul class="page__nav">
+				<nav class="nav">
+				<ul class="nav--main">
 					{block:HasPages}
 					{block:Pages}
 					<li><a href="{URL}">{Label}</a></li>
@@ -50,31 +50,31 @@
 					{/block:AskEnabled}
 				</ul>
 
-				<div class="page__search--layout">
-					<form>
-						<input type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-						<input type="submit" value="{lang:Search}">
+				<div class="search">
+					<form class="search--main">
+						<input class="search__field" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
+						<input class="search__button" type="submit" value="{lang:Search}">
 					</form>
 				</div>
 			</header>
 
-			<div class="page__content--layout">
-				<section class="page__content"><!-- start content -->
+			<div class="content">
+				<section class="content--main"><!-- start content -->
 					{block:SearchPage}
-					<section class="search__results">
+					<section class="search-results--term">
 						<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
 						{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
 					</section>
 					{/block:SearchPage}
 
 					{block:TagPage}
-					<section class="tag__result">
+					<section class="search-results--tag">
 						<p>{lang:TagResultCount posts tagged Tag 3}</p>
 					</section>
 					{/block:TagPage}
 
 					{block:Posts}
-					<article class="{post__layout TagsAsClasses}">
+					<article class="post {TagsAsClasses}">
 						{block:Date}
 						{block:NewDayDate}
 						<time datetime="{Year}-{Month}-{DayOfMonth}">{DayOfWeek}, {Month} {DayOfMonth}, {Year}</time>
@@ -109,7 +109,7 @@
 						{/block:Quote}
 
 						{block:Link}
-						<div class="link">
+						<div class="post--link">
 							<header class="post__header--link">
 								<h2><a href="{URL}" {Target}>{Name}</a></h2>
 							</header>
@@ -215,7 +215,7 @@
 						{/block:Chat}
 
 						{block:Answer}
-						<dl class="answer">
+						<dl class="post--answer">
 							<dd class="answer__asker">
 								<img class="asker__avatar" src="{AskerPortraitURL-40}">
 								<span class="asker__name">{Asker}</span>
@@ -250,7 +250,7 @@
 					<ul class="pagination">
 						{block:PreviousPage}
 						<li>
-							<a class="prev" href="{PreviousPage}">{lang:Previous}</a>
+							<a class="previous-page" href="{PreviousPage}">{lang:Previous}</a>
 						</li>
 						{/block:PreviousPage}
 
@@ -269,7 +269,7 @@
 
 						{block:NextPage}
 						<li>
-							<a class="next" href="{NextPage}">{lang:Next}</a>
+							<a class="next-page" href="{NextPage}">{lang:Next}</a>
 						</li>
 						{/block:NextPage}
 					</ul>
