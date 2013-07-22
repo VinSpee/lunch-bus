@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>			 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>				 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>				 <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Lunch Bus Component Library</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="styles/main.css">
+		<script src="components/modernizr/modernizr.js"></script>
+	</head>
+
+	<body>
+
+		<!--[if lt IE 7]>
+				<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+
+		<main class="page--layout" role="main">
+				<header>
+					<h1 class="branding">
+						<figure class="logo">Lunch Bus</figure>
+					</h1>
+					<span class="subtitle">Style Tiles v1.0</span>
+				</header>
+
+				<section class="module--style">
+					<header class="module--style__header">
+						<h2 class="module--style__title">Color</h2>
+					</header>
+
+					<ul class="colors">
+						<li class="swatch--color--base10">base10</li>
+						<li class="swatch--color--base11">base11</li>
+						<li class="swatch--color--base12 row">base12</li>
+						<li class="swatch--color--base0">base0</li>
+						<li class="swatch--color--base1">base1</li>
+						<li class="swatch--color--base2 row">base2</li>
+						<li class="swatch--color--base00">base00</li>
+						<li class="swatch--color--base01">base01</li>
+						<li class="swatch--color--base02 row">base02</li>
+					</ul>
+
+				</section>
+
+				<section class="module--style">
+					<header class="module--style__header">
+						<h2 class="module--style__title">Texture</h2>
+						<ul class="textures">
+							<li class="swatch--texture--">name</li>
+						</ul>
+					</header>
+				</section>
+
+				<section class="module--style">
+					<header class="module--style__header">
+						<h2 class="module--style__title">Text</h2>
+					</header>
+					<article class="copy">
+						<p>Pour-over +1 narwhal beard, brunch next level fap authentic master cleanse skateboard mixtape small batch cred. Marfa narwhal scenester, Echo Park polaroid gluten-free Portland trust fund swag disrupt bicycle rights mumblecore irony butcher. Forage plaid narwhal trust fund ugh. Single-origin coffee mustache squid, PBR food truck fashion axe skateboard post-ironic cliche. Terry Richardson bicycle rights seitan Echo Park, tote bag jean shorts beard art party Williamsburg vegan kitsch post-ironic occupy fap. Viral thundercats swag, pickled raw denim fanny pack Odd Future pug Portland Bushwick Wes Anderson ennui flannel. Four loko hella biodiesel food truck you probably haven't heard of them, High Life fingerstache church-key brunch DIY.</p>
+					</article>
+				</section>
+
+				<section class="module--style">
+					<header class="module--style__header">
+						<h2 class="module--style__title">Patterns</h2>
+					</header>
+					<ul class="navigation">
+						<li>
+							<a href="#notifications">Notifications</a>
+						</li>
+						<li>
+							<a href="#buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="#other">other</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class="module--style">
+					<header class="module--style__header">
+						<h3 class="module--style__title" id="notifications">Notifications</h3>
+					</header>
+
+						<figure class="notification--information">
+							<span class="notification__message">This is an informational notification.</span>
+						</figure>
+
+						<figure class="notification--positive">
+							<span class="notification__message">This is an accomplishment notification.</span>
+						</figure>
+
+						<figure class="notification--negative">
+							<span class="notification__message">This is an error notification.</span>
+						</figure>
+				</section>
+
+				<section class="module--style">
+					<header class="module--style__header">
+						<h3 class="module--style__title" id="buttons">Buttons</h3>
+					</header>
+
+					<ul class="simple-list">
+						<li><a class="button" href="#">Neutral Action</a></li>
+						<li><a class="button--positive" href="#">Positive Action</a></li>
+						<li><a class="button--negative" href="#">Negative Action</a></li>
+					</ul>
+				</section>
+
+		</main>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+				var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+
+		<!-- build:js scripts/main.js -->
+		<script data-main="scripts/main" src="components/requirejs/require.js"></script>
+		<!-- endbuild -->
+
+	</body>
+</html>
