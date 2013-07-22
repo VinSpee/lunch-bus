@@ -1,0 +1,14 @@
+.logo
+	width: 100%
+	display: block
+	height: rhythm(4)
+	+rhythm(.5, 0, 0, .5)
+	+replace-text(image-url("lunch-bus_logo.svg"))
+
+.no-svg .logo
+	width: 100%
+	display: block
+	height: rhythm(4)
+	+rhythm(.5, 0, 0, .5)
+	+replace-text(image-url("lunch-bus_logo.png"))
+	+background-size(100%)
