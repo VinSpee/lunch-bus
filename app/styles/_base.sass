@@ -1,9 +1,19 @@
-html
-	background: $base0
+@import base/lists
+@import base/headings
 
-div[role="main"]
-	+container
-	+susy-grid-background
-	+at-breakpoint($break)
-		+susy-grid-background
-		+set-container-width
+html
+	@extend %copy
+	background: $base0
+	color: $base00
+	$grid-background-baseline-color: $base10
+	+background-grid($color: $base10)
+	//+debug-vertical-alignment
+
+body
+
+main[role="main"]
+
+[role="banner"]
+	background: scale-color($color: $base0, $lightness: -10%)
+	+trailer(.5)
+	+clearfix
