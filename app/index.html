@@ -47,7 +47,7 @@
 					<div class="search">
 						<form class="search--main">
 							<input class="search__field" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-							<input class="search__button" type="submit" value="{lang:Search}">
+							<input class="search__button" type="submit" value="search">
 						</form>
 					</div>
 				</nav>
@@ -221,9 +221,9 @@
 
 						{block:Answer}
 						<dl class="post--answer">
-							<dd class="answer__asker">
-								<img class="asker__avatar" src="{AskerPortraitURL-40}">
-								<span class="asker__name">{Asker}</span>
+							<dd class="media answer__asker">
+								<img class="media__fig asker__avatar" src="{AskerPortraitURL-40}">
+								<span class="media__body asker__name">{Asker}</span>
 							</dd>
 							<dt class="answer__question">{Question}</dt>
 							<dd class="answer__answer">{Answer}</dd>
