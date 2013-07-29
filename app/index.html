@@ -99,7 +99,7 @@
 							</header>
 							{block:Description}
 							<section class="post__caption--link">
-								<p>{Description}</p>
+								{Description}
 							</section>
 							{/block:Description}
 						</div>
@@ -140,8 +140,8 @@
 							<img class="photo" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
 							{LinkCloseTag}
 							{block:Caption}
-							<figcaption>
-								<p class="post__caption--photo">{Caption}</p>
+							<figcaption class="post__caption--photo">
+								{Caption}
 							</figcaption>
 							{/block:Caption}
 						</figure>
@@ -187,18 +187,20 @@
 						{block:Chat}
 						<section class="post--chat">
 							{block:Title}
-							<h2>{Title}</h2>
+							<header class="post__header">
+								<h2>{Title}</h2>
+							</header>
 							{/block:Title}
-							<ul class="conversation">
-								{block:Lines}
+							{block:Lines}
+							<ul class="post__conversation">
 								<li class="conversation__line {Alt}">
 									{block:Label}
 									<span class="conversation__person">{Label}</span>
 									{/block:Label}
 									<span class="conversation__person-said">{Line}</span>
 								</li>
-								{/block:Lines}
 							</ul>
+							{/block:Lines}
 						</section>
 						{/block:Chat}
 
