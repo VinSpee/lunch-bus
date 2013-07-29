@@ -1,3 +1,23 @@
+input
+	+appearance(none)
+	+adjust-font-size-to(ms(0))
+	border: 0
+	padding: 0 ms(-3)
+	margin: 0
+	@extend %headline--fat
+	background: $base10
+	color: $base00
+	+input-placeholder($base11)
+	+transition(box-shadow .2s linear)
+	+box-shadow(inset 0 0 0 3px transparent)
+	&:focus
+		outline: 0
+		+box-shadow(inset 0 0 0 3px $base11)
+
+input[type=submit]
+	background: $base1
+	color: $base10
+
 html
 	@extend %copy
 	background: $base0
