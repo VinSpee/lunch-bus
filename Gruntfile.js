@@ -145,7 +145,7 @@ module.exports = function (grunt) {
                 importPath: 'app/components',
                 httpImagesPath: '/themes/lunch-bus/app/images',
                 httpGeneratedImagesPath: '/images/generated',
-                httpFontsPath: '/styles/fonts',
+                httpFontsPath: '/themes/lunch-bus/app/styles/fonts',
                 relativeAssets: false
             },
             dist: {},
