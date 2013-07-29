@@ -31,27 +31,6 @@
 		<div class="page">
 			<header role="banner">
 
-				<nav role="navigation" class="nav">
-					<ul class="nav--main">
-						{block:HasPages}
-						{block:Pages}
-						<li><a href="{URL}">{Label}</a></li>
-						{/block:Pages}
-						{/block:HasPages}
-						<li><a href="/archive">{lang:Archive}</a></li>
-						{block:AskEnabled}
-						<li><a href="/ask">{AskLabel}</a></li>
-						{/block:AskEnabled}
-					</ul>
-
-					<div class="search">
-						<form class="search--main">
-							<input class="search__field" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-							<input class="search__button" type="submit" value="search">
-						</form>
-					</div>
-				</nav>
-
 				<h1 class="branding">
 					<a class="logo" href="/">{Title}</a>
 				</h1>
@@ -128,10 +107,12 @@
 
 						{block:Video}
 						<figure class="post--video">
-							{Video-500}
-							{block:Caption}
-							<figcaption>
-								<p class="post__caption--video">{Caption}</p>
+							<div class="video">
+								{Video-500}
+							</div>
+								{block:Caption}
+							<figcaption class="post__caption--video">
+								{Caption}
 							</figcaption>
 							{/block:Caption}
 						</figure>
@@ -142,10 +123,12 @@
 							{block:AlbumArt}
 							<img class="album-art" src="{AlbumArtURL}" alt="">
 							{/block:AlbumArt}
-							{AudioPlayerBlack}
+							<div class="player--audio">
+								{AudioPlayerBlack}
+							</div>
 							{block:Caption}
 							<section class="post__caption--audio">
-								<p>{Caption}</p>
+								{Caption}
 							</section>
 							{/block:Caption}
 						</div>
@@ -220,11 +203,11 @@
 						{/block:Chat}
 
 						{block:Answer}
+						<figure class="media answer__asker">
+							<img class="media__fig asker__avatar" src="{AskerPortraitURL-40}">
+							<figcaption class="media__body asker__name">{Asker}</figcaption>
+						</figure>
 						<dl class="post--answer">
-							<dd class="media answer__asker">
-								<img class="media__fig asker__avatar" src="{AskerPortraitURL-40}">
-								<span class="media__body asker__name">{Asker}</span>
-							</dd>
 							<dt class="answer__question">{Question}</dt>
 							<dd class="answer__answer">{Answer}</dd>
 						</dl>
@@ -281,6 +264,29 @@
 					{/block:Pagination}
 				</section><!--close content-->
 			</main>
+			<footer class="contentinfo">
+				<nav role="navigation" class="nav">
+					<ul class="nav--main">
+						{block:HasPages}
+						{block:Pages}
+						<li><a href="{URL}">{Label}</a></li>
+						{/block:Pages}
+						{/block:HasPages}
+						<li><a href="/archive">{lang:Archive}</a></li>
+						{block:AskEnabled}
+						<li><a href="/ask">{AskLabel}</a></li>
+						{/block:AskEnabled}
+					</ul>
+
+					<div class="search">
+						<form class="search--main">
+							<input class="search__field" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
+							<input class="search__button" type="submit" value="search">
+						</form>
+					</div>
+				</nav>
+			</footer>
+
 		</div>
 		<script data-main="scripts/main" src="themes/lunch-bus/app/components/requirejs/require.js"></script>
 		<script type="text/javascript" src="//use.typekit.net/ldn1pez.js"></script>

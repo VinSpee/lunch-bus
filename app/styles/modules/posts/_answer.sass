@@ -1,12 +1,33 @@
 .post--answer
-	+trailer
+	+isolation-span(3, 2)
 
 .answer__asker
+	+trailer(.5)
 
 .asker__avatar
 	+isolation-span(1, 2)
+	height: rhythm(1)
+	width: auto
 
 .asker__name
-	+isolation-span(3, 3)
+	+isolation-span(1, 3)
+	text-align: center
+	@extend %headline--fat
 
-.answer__
+	> a
+		text-decoration: none
+		color: $base02
+
+.answer__question, .answer__answer
+	&:before
+		@extend %headline--fat
+		margin-right: msem(0)
+
+.answer__question:before
+	content: 'Q:'
+
+.answer__answer
+	&:before
+		content: 'A:'
+	> p
+		display: inline
