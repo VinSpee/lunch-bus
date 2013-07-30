@@ -1,3 +1,17 @@
+@import base/text
+html
+	@extend %copy
+	background: scale-color($color: $base0, $lightness: 50%)
+	color: $base00
+	$grid-background-baseline-color: $base10
+	//+background-grid($color: $base10)
+	//+debug-vertical-alignment
+
+[role="banner"]
+	background: scale-color($color: $base0, $lightness: -10%)
+	+trailer(.5)
+	+clearfix
+
 input
 	+appearance(none)
 	+adjust-font-size-to(ms(0))
@@ -18,16 +32,3 @@ input[type=submit]
 	background: $base1
 	color: $base10
 
-html
-	@extend %copy
-	background: $base0
-	color: $base00
-	$grid-background-baseline-color: $base10
-	+background-grid($color: $base10)
-	//+debug-vertical-alignment
-
-[role="banner"]
-	background: scale-color($color: $base0, $lightness: -10%)
-	//+trailer(.5)
-	margin-bottom: .75em
-	+clearfix
