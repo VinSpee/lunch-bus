@@ -4,8 +4,11 @@
 	+box-shadow(inset 0 -2px 0 0 $base0)
 	+rhythm(0, 0, 1, 1)
 
-[class*=post__caption]
+[class*=post__caption], [class*=post__header], [class*=post__conversation], [class*=post__content], [class*=post--quote]
 	+isolation-span(3, 2)
+
+[class*=post__caption], [class*=post__conversation], [class*=post__content]
+	clear: left
 
 @import modules/posts/answer
 @import modules/posts/video
