@@ -1,0 +1,26 @@
+.quote
+	> blockquote
+		position: relative
+		@extend %headline--fat
+		+trailer
+		&:before, &:after
+			position: absolute
+			color: transparentize($base0, .5)
+			@extend %copy
+			+adjust-font-size-to(ms(15))
+			z-index: -1
+		&:before
+			content: "“"
+			top: -.1em
+			left: -.1em
+		&:after
+			content: "”"
+			bottom: -.70em
+			right: -.1em
+
+.quote__citation
+	float: right
+	text-align: right
+	&:before
+		content: "—"
+		margin-right: msem(-2)
