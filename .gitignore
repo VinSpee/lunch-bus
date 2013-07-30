@@ -1,4 +1,5 @@
 temp
+Gemfile.lock
 .tmp
 dist
 *.sass-cache
