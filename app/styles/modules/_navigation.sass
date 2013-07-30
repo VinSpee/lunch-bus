@@ -1,4 +1,28 @@
-.navigation--main
+[role=navigation]
+	background: $base12
+	@extend %headline--fat
+	overflow: hidden
+
+.nav--main
+	display: block
+
 	> li
+		margin-left: 0
 		display: block
-		+grid-span(1, 1, 3, 0)
+		+box-shadow(inset 0 -2px 0 0 scale-color($color: $base12, $lightness: -15%))
+
+	a
+		display: block
+		color: $base02
+		padding: 0 msem(0)
+		+rhythm(0, .5, .5, 0)
+		text-decoration: none
+		+box-shadow(-.5em 0 0 0 $base12)
+		+transition(background .2s linear, color .3s linear, transform .3s linear, box-shadow .2s linear)
+
+		&:hover, &:active, &:focus
+			+translate3d(.5em, 0, 0, 1000)
+			background: scale-color($color: $base12, $lightness: -15%)
+			color: $base10
+			outline: 0
+			+box-shadow(-.5em 0 0 0 scale-color($color: $base12, $lightness: -15%))

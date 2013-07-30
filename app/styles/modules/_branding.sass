@@ -1,14 +1,14 @@
 .branding
-	+pie-clearfix
-	padding: 0 msem(0)
+	clear: both
+	+clearfix
 	+box-shadow(0 2px 0 0 $base0)
-	margin: inherit -1em
+	+trailer(.5)
 
 .logo
 	display: block
 	+replace-text(image-url("lunch-bus_logo.svg"))
-	height: rhythm(1.5)
-	+rhythm(.25, 0, 0, .25)
+	height: rhythm(3.5)
+	+rhythm(.5, 0, 0, .5)
 	&:hover
 		background: inherit
 		+replace-text(image-url("lunch-bus_logo.svg"))
@@ -21,8 +21,8 @@
 	+background-size(100%)
 
 .subtitle
-	clear: both
 	display: block
+	padding: 0 msem(0)
 	@extend %copy
 	text-align: center
 	color: $base10
