@@ -28,37 +28,40 @@
 		<script src="themes/lunch-bus/app/components/modernizr/modernizr.js"></script>
 	</head>
 	<body>
-		<main role="main">
-			<header role="banner" class="page__header">
-				<h1><a href="/">{Title}</a></h1>
+		<div class="page">
+			<header role="banner">
+				<h1 class="branding">
+					<a class="logo" href="/">{Title}</a>
+				</h1>
 				{block:Description}
-				<div class="subhead">
+				<span class="subtitle">
 					{Description}
-				</div>
+				</span>
 				{/block:Description}
 
-				<nav class="nav">
-				<ul class="nav--main">
-					{block:HasPages}
-					{block:Pages}
-					<li><a href="{URL}">{Label}</a></li>
-					{/block:Pages}
-					{/block:HasPages}
-					<li><a href="/archive">{lang:Archive}</a></li>
-					{block:AskEnabled}
-					<li><a href="/ask">{AskLabel}</a></li>
-					{/block:AskEnabled}
-				</ul>
+				<nav role="navigation" class="nav">
+					<ul class="nav--main">
+						{block:HasPages}
+						{block:Pages}
+						<li><a href="{URL}">{Label}</a></li>
+						{/block:Pages}
+						{/block:HasPages}
+						<li><a href="/archive">{lang:Archive}</a></li>
+						{block:AskEnabled}
+						<li><a href="/ask">{AskLabel}</a></li>
+						{/block:AskEnabled}
+					</ul>
 
-				<div class="search">
-					<form class="search--main">
-						<input class="search__field" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
-						<input class="search__button" type="submit" value="{lang:Search}">
-					</form>
-				</div>
+					<div class="search">
+						<form class="search--main">
+							<input class="search__field" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
+							<input class="search__button" type="submit" value="{lang:Search}">
+						</form>
+					</div>
+				</nav>
 			</header>
 
-			<div class="content">
+			<main role="main">
 				<section class="content--main"><!-- start content -->
 					{block:SearchPage}
 					<section class="search-results--term">
@@ -275,8 +278,8 @@
 					</ul>
 					{/block:Pagination}
 				</section><!--close content-->
-			</div>
-		</main>
+			</main>
+		</div>
 		<script data-main="scripts/main" src="themes/lunch-bus/app/components/requirejs/require.js"></script>
 	</body>
 	{/block:tumblrThemr}

@@ -136,14 +136,14 @@ module.exports = function (grunt) {
         },
         compass: {
             options: {
-                require: ['modular-scale', 'susy', 'omg-text'],
+                require: ['modular-scale', 'singularitygs', 'omg-text'],
                 sassDir: '<%= yeoman.app %>/styles',
                 cssDir: '.tmp/styles',
                 imagesDir: '<%= yeoman.app %>/images',
                 javascriptsDir: '<%= yeoman.app %>/scripts',
                 fontsDir: '<%= yeoman.app %>/styles/fonts',
                 importPath: 'app/components',
-                httpImagesPath: '/images',
+                httpImagesPath: '/themes/lunch-bus/app/images',
                 httpGeneratedImagesPath: '/images/generated',
                 httpFontsPath: '/styles/fonts',
                 relativeAssets: false

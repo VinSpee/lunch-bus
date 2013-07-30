@@ -1,0 +1,43 @@
+.colors
+	+clearfix
+	+trailer
+
+
+[class*=swatch--color]
+	height: rhythm(3.5)
+	+padding-leader(1)
+	padding-left: ms(0)
+	&:nth-of-type(3n+1)
+		+float-span(1, 1, 3, 0)
+		clear: left
+	&:nth-of-type(3n+2)
+		+float-span(1, 2, 3, 0)
+	&:nth-of-type(3n+3)
+		+float-span(1, 3, 3, 0)
+
+[class*=base0]
+	+contrasted($base0)
+
+[class*=base1]
+	+contrasted($base1)
+
+[class*=base2]
+	+contrasted($base2)
+
+[class*=base00]
+	+contrasted($base00)
+
+[class*=base01]
+	+contrasted($base01)
+
+[class*=base02]
+	+contrasted($base02)
+
+[class*=base10]
+	+contrasted($base10)
+
+[class*=base11]
+	+contrasted($base11)
+
+[class*=base12]
+	+contrasted($base12)
