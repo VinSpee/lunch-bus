@@ -1,5 +1,11 @@
 #{headings()}
 	@extend %headline--fat
+	> a
+		color: inherit
+		text-decoration: none
+		&:hover, &:active, &:focus
+			background: transparent
+			text-decoration: underline
 
 h2
 	color: $base01
